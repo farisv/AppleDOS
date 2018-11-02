@@ -46,7 +46,7 @@ Send bad packet to 192.168.1.0/24 subnet continuously.
 sudo ./appledos.py --continuous 192.168.1.0/24
 ```
 
-Change destination port (default: 80).
+Change destination port (default: 80). You can change to any port since devices will respond to any incoming packet to any port but you may want to concern about port blocking or firewall in the host or network.
 
 ```
 sudo ./appledos.py --continuous --port 22 192.168.1.0/24

@@ -12,6 +12,10 @@ The following operating system versions and devices are vulnerable:
 - Apple macOS Sierra, up to and including 10.12.6: all devices
 - Apple OS X El Capitan and earlier: all devices
 
+## WARNING
+
+FOR EDUCATION ONLY. DON'T DO ANYTHING ILLEGAL WITH THIS SCRIPT. THE AUTHOR IS NOT RESPONSIBLE FOR ANY MALICIOUS ACTS OR DAMAGE FROM THIS SCRIPT.
+
 ## Example
 
 Make sure you have Python 3 and scapy.

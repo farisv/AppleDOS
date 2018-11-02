@@ -1,6 +1,6 @@
 # AppleDOS (CVE-2018-4407)
 
-Based on CVE-2018-4407 (https://lgtm.com/blog/apple_xnu_icmp_error_CVE-2018-4407), this [tweet](https://twitter.com/ihackbanme/status/1057811965945376768), and this [video](https://twitter.com/kevin_backhouse/status/1057352656560287746). The bug is heap overflow vulnerability in bad packet handling when ICMP response message.
+Based on CVE-2018-4407 (https://lgtm.com/blog/apple_xnu_icmp_error_CVE-2018-4407), this [tweet](https://twitter.com/ihackbanme/status/1057811965945376768), and this [video](https://twitter.com/kevin_backhouse/status/1057352656560287746). The bug is heap overflow vulnerability in bad packet handling when OS try to send ICMP message containing segments from bad packet back to the sender.
 
 ![](demo.gif)
 

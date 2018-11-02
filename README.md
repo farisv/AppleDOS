@@ -1,6 +1,6 @@
 # AppleDOS (CVE-2018-4407)
 
-Based on CVE-2018-4407 (https://lgtm.com/blog/apple_xnu_icmp_error_CVE-2018-4407), this [tweet](https://twitter.com/ihackbanme/status/1057811965945376768), and this [video](https://twitter.com/kevin_backhouse/status/1057352656560287746). The bug is heap overflow vulnerability in bad packet handling through ICMP response message.
+Based on CVE-2018-4407 (https://lgtm.com/blog/apple_xnu_icmp_error_CVE-2018-4407), this [tweet](https://twitter.com/ihackbanme/status/1057811965945376768), and this [video](https://twitter.com/kevin_backhouse/status/1057352656560287746). The bug is heap overflow vulnerability in bad packet handling when ICMP response message.
 
 ![](demo.gif)
 
@@ -66,4 +66,4 @@ sudo ./appledos.py --worker 10 192.168.1.0/24
 
 ## Note
 
-This script is using scapy and it has know issue for handling `/dev/bpf` (Berkeley Packet Filter) when sending packet data from OS like macOS with multi-thread. If you encounter `No /dev/bpf handle is available`, try to reduce the worker number to 1 or 2. Or, you can just use Linux like in the demonstration video.
+This script is using scapy and it has known issue for handling `/dev/bpf` (Berkeley Packet Filter) when sending packet data from OS like macOS with multi-thread. If you encounter `No /dev/bpf handle is available`, try to reduce the worker number to 1 or 2. Or, you can just use Linux like in the demonstration video.

@@ -2,7 +2,7 @@
 
 Based on CVE-2018-4407 (https://lgtm.com/blog/apple_xnu_icmp_error_CVE-2018-4407), this [tweet](https://twitter.com/ihackbanme/status/1057811965945376768), and this [video](https://twitter.com/kevin_backhouse/status/1057352656560287746). The bug is heap overflow vulnerability in bad packet handling through ICMP response message.
 
-[](demo.gif)
+![](demo.gif)
 
 This POC will crashes the vulnerable Apple devices by sending bad TCP packet data containing long TCP/IP header options to overflow the ICMP message when device try to send out the error message. You need the ability to send network packet data directly to the device (e.g. on the same local network).
 

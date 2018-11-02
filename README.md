@@ -54,7 +54,7 @@ Send bad packet to only one IP.
 sudo ./appledos.py 192.168.1.118
 ```
 
-Set maximum workers (default: 10).
+Set maximum workers (default: 100).
 
 ```
 sudo ./appledos.py --worker 10 192.168.1.0/24
